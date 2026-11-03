@@ -4,7 +4,7 @@
     "md5": "e6b0ca77f3f200ec5428e04dd104da53",
     "rows": 45211,
     "cols": 17,
-    "loaded_at": "2026-11-03 22:19:05",
+    "loaded_at": "2026-11-03 23:09:15",
     "columns": {
       "age": {
         "dtype": "int",
