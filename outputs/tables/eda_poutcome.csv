@@ -1,0 +1,5 @@
+﻿poutcome,contacts,subscribed,conv_rate,avg_duration,avg_balance,contact_share,sub_share
+unknown,36956,3386,0.0916,257.8,1318.7,0.8175,0.6402
+failure,4901,618,0.1261,244.2,1465.8,0.1084,0.1168
+other,1840,307,0.1668,255.7,1487.4,0.0407,0.058
+success,1511,978,0.6473,316.9,1939.3,0.0334,0.1849

@@ -1,0 +1,29 @@
+UCI Bank Marketing 数据加载报告
+生成时间：2026-11-03 22:19:05
+
+主表：bank-full.csv（45,211 行 × 17 列）
+MD5：e6b0ca77f3f200ec5428e04dd104da53
+空值：0
+原始层完全重复行：0
+
+字段清单：
+  age         int   唯一值=77   
+  job         cat   唯一值=12   {'blue-collar': 9732, 'management': 9458, 'technician': 7597, 'admin.': 5171, 'services': 4154, 'retired': 2264, 'self-employed': 1579, 'entrepreneur': 1487, 'unemployed': 1303, 'housemaid': 1240, 'student': 938, 'unknown': 288}
+  marital     cat   唯一值=3    {'married': 27214, 'single': 12790, 'divorced': 5207}
+  education   cat   唯一值=4    {'secondary': 23202, 'tertiary': 13301, 'primary': 6851, 'unknown': 1857}
+  default     cat   唯一值=2    {'no': 44396, 'yes': 815}
+  balance     int   唯一值=7168 
+  housing     cat   唯一值=2    {'yes': 25130, 'no': 20081}
+  loan        cat   唯一值=2    {'no': 37967, 'yes': 7244}
+  contact     cat   唯一值=3    {'cellular': 29285, 'unknown': 13020, 'telephone': 2906}
+  day         int   唯一值=31   
+  month       cat   唯一值=12   {'may': 13766, 'jul': 6895, 'aug': 6247, 'jun': 5341, 'nov': 3970, 'apr': 2932, 'feb': 2649, 'jan': 1403, 'oct': 738, 'sep': 579, 'mar': 477, 'dec': 214}
+  duration    int   唯一值=1573 
+  campaign    int   唯一值=48   
+  pdays       int   唯一值=559  
+  previous    int   唯一值=41   
+  poutcome    cat   唯一值=4    {'unknown': 36959, 'failure': 4901, 'other': 1840, 'success': 1511}
+  y           cat   唯一值=2    {'no': 39922, 'yes': 5289}
+
+辅助表：bank-additional-full.csv（41,188 行 × 21 列）
+辅助表 MD5：f6cb2c1256ffe2836b36df321f46e92c

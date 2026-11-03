@@ -1,0 +1,223 @@
+{
+  "kpi": {
+    "contacts": 45208,
+    "subscribed": 5289,
+    "conversion_rate": 0.117,
+    "avg_duration_sec": 258.2,
+    "median_balance": 448.0,
+    "avg_campaign": 2.76,
+    "repeat_contact_ratio": 0.1826,
+    "date_start": "2008-05-05",
+    "date_end": "2010-11-17"
+  },
+  "funnel": {
+    "funnel": [
+      {
+        "stage": "触达名单",
+        "threshold_sec": 0.0,
+        "users": 45208,
+        "overall_rate": 1.0,
+        "step_rate": 1.0,
+        "drop_users": 0,
+        "drop_rate": 0.0
+      },
+      {
+        "stage": "有效接通",
+        "threshold_sec": 30.0,
+        "users": 43264,
+        "overall_rate": 0.957,
+        "step_rate": 0.957,
+        "drop_users": 1944,
+        "drop_rate": 0.043
+      },
+      {
+        "stage": "有效沟通",
+        "threshold_sec": 120.0,
+        "users": 31303,
+        "overall_rate": 0.6924,
+        "step_rate": 0.7235,
+        "drop_users": 11961,
+        "drop_rate": 0.2765
+      },
+      {
+        "stage": "深度沟通",
+        "threshold_sec": 300.0,
+        "users": 12329,
+        "overall_rate": 0.2727,
+        "step_rate": 0.3939,
+        "drop_users": 18974,
+        "drop_rate": 0.6061
+      },
+      {
+        "stage": "认购成功",
+        "threshold_sec": NaN,
+        "users": 5289,
+        "overall_rate": 0.117,
+        "step_rate": 0.429,
+        "drop_users": 7040,
+        "drop_rate": 0.571
+      }
+    ],
+    "biggest_drop_stage": "深度沟通",
+    "biggest_drop_rate": 0.6061
+  },
+  "trend": {
+    "best_month": "2009-05",
+    "best_month_subs": 533,
+    "worst_month": "2008-12",
+    "avg_monthly_contacts": 1506.9,
+    "conv_volatility": 0.2069
+  },
+  "pareto": {
+    "a_classes": [
+      "management | 26-35",
+      "management | 36-45",
+      "technician | 26-35",
+      "retired | 65+",
+      "blue-collar | 26-35",
+      "technician | 36-45",
+      "admin. | 26-35",
+      "management | 46-55",
+      "blue-collar | 36-45",
+      "retired | 56-65",
+      "admin. | 36-45",
+      "technician | 46-55",
+      "services | 26-35",
+      "student | 18-25",
+      "blue-collar | 46-55"
+    ],
+    "a_share_of_subs": 0.6993,
+    "a_share_of_contacts": 0.7059
+  },
+  "bcg": {
+    "management": "金牛",
+    "technician": "明星",
+    "blue-collar": "明星",
+    "admin.": "金牛",
+    "retired": "瘦狗",
+    "services": "明星",
+    "student": "瘦狗",
+    "unemployed": "问题",
+    "self-employed": "问题",
+    "entrepreneur": "问题",
+    "housemaid": "瘦狗",
+    "unknown": "瘦狗"
+  },
+  "kmeans": {
+    "k": 5,
+    "segments": [
+      {
+        "label": "高意向深度沟通型",
+        "share": 0.0334,
+        "conv_rate": 0.6473,
+        "avg_duration": 316.87
+      },
+      {
+        "label": "老客待再激活型",
+        "share": 0.1455,
+        "conv_rate": 0.1391,
+        "avg_duration": 247.38
+      },
+      {
+        "label": "稳步转化型",
+        "share": 0.3177,
+        "conv_rate": 0.134,
+        "avg_duration": 251.92
+      },
+      {
+        "label": "高频低效打扰型",
+        "share": 0.3643,
+        "conv_rate": 0.0665,
+        "avg_duration": 264.64
+      },
+      {
+        "label": "低净值长尾型",
+        "share": 0.1391,
+        "conv_rate": 0.0596,
+        "avg_duration": 252.75
+      }
+    ]
+  },
+  "rules": [
+    {
+      "antecedent": "housing=no & poutcome=success",
+      "n_items": 2,
+      "support": 0.0161,
+      "confidence": 0.701,
+      "lift": 5.992,
+      "conviction": 2.953
+    },
+    {
+      "antecedent": "balance_band=0-1千 & poutcome=success",
+      "n_items": 2,
+      "support": 0.0108,
+      "confidence": 0.6759,
+      "lift": 5.777,
+      "conviction": 2.724
+    },
+    {
+      "antecedent": "campaign_bucket=1次 & poutcome=success",
+      "n_items": 2,
+      "support": 0.0123,
+      "confidence": 0.6655,
+      "lift": 5.688,
+      "conviction": 2.64
+    },
+    {
+      "antecedent": "marital=married & poutcome=success",
+      "n_items": 2,
+      "support": 0.0121,
+      "confidence": 0.6543,
+      "lift": 5.593,
+      "conviction": 2.554
+    },
+    {
+      "antecedent": "loan=no & poutcome=success",
+      "n_items": 2,
+      "support": 0.0207,
+      "confidence": 0.6536,
+      "lift": 5.587,
+      "conviction": 2.549
+    },
+    {
+      "antecedent": "contact=cellular & poutcome=success",
+      "n_items": 2,
+      "support": 0.0199,
+      "confidence": 0.6498,
+      "lift": 5.554,
+      "conviction": 2.522
+    },
+    {
+      "antecedent": "poutcome=success",
+      "n_items": 1,
+      "support": 0.0216,
+      "confidence": 0.6473,
+      "lift": 5.532,
+      "conviction": 2.503
+    },
+    {
+      "antecedent": "housing=no & job=retired",
+      "n_items": 2,
+      "support": 0.0103,
+      "confidence": 0.2617,
+      "lift": 2.237,
+      "conviction": 1.196
+    },
+    {
+      "antecedent": "job=retired & loan=no",
+      "n_items": 2,
+      "support": 0.0109,
+      "confidence": 0.2532,
+      "lift": 2.164,
+      "conviction": 1.182
+    },
+    {
+      "antecedent": "job=retired",
+      "n_items": 1,
+      "support": 0.0114,
+      "confidence": 0.2279,
+      "lift": 1.948,
+      "conviction": 1.144
+    }
+  ]
+}

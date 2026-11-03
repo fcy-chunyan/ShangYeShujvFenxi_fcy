@@ -1,0 +1,43 @@
+{
+  "raw_rows": 45211,
+  "duplicates_removed": 0,
+  "zero_duration_removed": 3,
+  "unknown_counts": {
+    "job": 288,
+    "education": 1857,
+    "contact": 13019,
+    "poutcome": 36956
+  },
+  "unknown_ratio": {
+    "job": 0.0064,
+    "education": 0.0411,
+    "contact": 0.288,
+    "poutcome": 0.8175
+  },
+  "duration_quartiles": {
+    "p25": 103.0,
+    "p50": 180.0,
+    "p75": 319.0,
+    "p99": 1269.0
+  },
+  "balance_range": {
+    "min": -8019,
+    "max": 102127,
+    "p1": -627.0,
+    "p99": 13164.93
+  },
+  "date_range": [
+    "2008-05-05",
+    "2010-11-17"
+  ],
+  "n_months": 30,
+  "n_weeks": 122,
+  "clean_rows": 45208,
+  "subscribed": 5289,
+  "conversion_rate": 0.117,
+  "outputs": [
+    "bank_clean.csv",
+    "bank_clean.json",
+    "bank_clean.sqlite"
+  ]
+}

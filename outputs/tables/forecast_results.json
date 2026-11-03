@@ -1,0 +1,30 @@
+{
+  "order": [
+    0,
+    1,
+    2
+  ],
+  "train_weeks": 121,
+  "test_weeks": 12,
+  "backtest": {
+    "MAPE_%": 38.74,
+    "RMSE": 12.77,
+    "MAE": 10.15
+  },
+  "hw_backtest": {
+    "MAPE_%": 43.57,
+    "RMSE": 15.16,
+    "MAE": 12.46
+  },
+  "naive_backtest": {
+    "MAPE_%": 65.67,
+    "RMSE": 15.27,
+    "MAE": 12.54
+  },
+  "forecast_mean": 17.6,
+  "forecast_ci": [
+    0.0,
+    106.7
+  ],
+  "seasonal_strength": 0.622
+}

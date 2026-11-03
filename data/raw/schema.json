@@ -1,0 +1,190 @@
+{
+  "main": {
+    "file": "bank-full.csv",
+    "md5": "e6b0ca77f3f200ec5428e04dd104da53",
+    "rows": 45211,
+    "cols": 17,
+    "loaded_at": "2026-11-03 22:19:05",
+    "columns": {
+      "age": {
+        "dtype": "int",
+        "n_unique": 77,
+        "n_missing": 0,
+        "min": 18.0,
+        "max": 95.0,
+        "mean": 40.936
+      },
+      "job": {
+        "dtype": "cat",
+        "n_unique": 12,
+        "n_missing": 0,
+        "top_values": {
+          "blue-collar": 9732,
+          "management": 9458,
+          "technician": 7597,
+          "admin.": 5171,
+          "services": 4154,
+          "retired": 2264,
+          "self-employed": 1579,
+          "entrepreneur": 1487,
+          "unemployed": 1303,
+          "housemaid": 1240,
+          "student": 938,
+          "unknown": 288
+        }
+      },
+      "marital": {
+        "dtype": "cat",
+        "n_unique": 3,
+        "n_missing": 0,
+        "top_values": {
+          "married": 27214,
+          "single": 12790,
+          "divorced": 5207
+        }
+      },
+      "education": {
+        "dtype": "cat",
+        "n_unique": 4,
+        "n_missing": 0,
+        "top_values": {
+          "secondary": 23202,
+          "tertiary": 13301,
+          "primary": 6851,
+          "unknown": 1857
+        }
+      },
+      "default": {
+        "dtype": "cat",
+        "n_unique": 2,
+        "n_missing": 0,
+        "top_values": {
+          "no": 44396,
+          "yes": 815
+        }
+      },
+      "balance": {
+        "dtype": "int",
+        "n_unique": 7168,
+        "n_missing": 0,
+        "min": -8019.0,
+        "max": 102127.0,
+        "mean": 1362.272
+      },
+      "housing": {
+        "dtype": "cat",
+        "n_unique": 2,
+        "n_missing": 0,
+        "top_values": {
+          "yes": 25130,
+          "no": 20081
+        }
+      },
+      "loan": {
+        "dtype": "cat",
+        "n_unique": 2,
+        "n_missing": 0,
+        "top_values": {
+          "no": 37967,
+          "yes": 7244
+        }
+      },
+      "contact": {
+        "dtype": "cat",
+        "n_unique": 3,
+        "n_missing": 0,
+        "top_values": {
+          "cellular": 29285,
+          "unknown": 13020,
+          "telephone": 2906
+        }
+      },
+      "day": {
+        "dtype": "int",
+        "n_unique": 31,
+        "n_missing": 0,
+        "min": 1.0,
+        "max": 31.0,
+        "mean": 15.806
+      },
+      "month": {
+        "dtype": "cat",
+        "n_unique": 12,
+        "n_missing": 0,
+        "top_values": {
+          "may": 13766,
+          "jul": 6895,
+          "aug": 6247,
+          "jun": 5341,
+          "nov": 3970,
+          "apr": 2932,
+          "feb": 2649,
+          "jan": 1403,
+          "oct": 738,
+          "sep": 579,
+          "mar": 477,
+          "dec": 214
+        }
+      },
+      "duration": {
+        "dtype": "int",
+        "n_unique": 1573,
+        "n_missing": 0,
+        "min": 0.0,
+        "max": 4918.0,
+        "mean": 258.163
+      },
+      "campaign": {
+        "dtype": "int",
+        "n_unique": 48,
+        "n_missing": 0,
+        "min": 1.0,
+        "max": 63.0,
+        "mean": 2.764
+      },
+      "pdays": {
+        "dtype": "int",
+        "n_unique": 559,
+        "n_missing": 0,
+        "min": -1.0,
+        "max": 871.0,
+        "mean": 40.198
+      },
+      "previous": {
+        "dtype": "int",
+        "n_unique": 41,
+        "n_missing": 0,
+        "min": 0.0,
+        "max": 275.0,
+        "mean": 0.58
+      },
+      "poutcome": {
+        "dtype": "cat",
+        "n_unique": 4,
+        "n_missing": 0,
+        "top_values": {
+          "unknown": 36959,
+          "failure": 4901,
+          "other": 1840,
+          "success": 1511
+        }
+      },
+      "y": {
+        "dtype": "cat",
+        "n_unique": 2,
+        "n_missing": 0,
+        "top_values": {
+          "no": 39922,
+          "yes": 5289
+        }
+      }
+    },
+    "issues": []
+  },
+  "aux": {
+    "file": "bank-additional-full.csv",
+    "rows": 41188,
+    "cols": 21,
+    "md5": "f6cb2c1256ffe2836b36df321f46e92c"
+  }
+}

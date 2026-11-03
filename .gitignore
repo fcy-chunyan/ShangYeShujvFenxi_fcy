@@ -1,0 +1,24 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- Office 临时锁文件（WPS / Word 打开文档时生成） ----
+~$*
+.~lock.*
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 清洗中间产物：由 02_clean.py 自动生成，为控制仓库体积不入库 ----
+# （bank_clean.csv 入库，保证克隆后无需重跑即可直接分析）
+data/clean/*.json
+data/clean/*.sqlite
+
+# ---- 预览 / 临时产物 ----
+docs/_preview.pdf
+*.log

@@ -1,0 +1,14 @@
+﻿antecedent,n_items,support,confidence,lift,conviction
+housing=no & poutcome=success,2,0.0161,0.701,5.992,2.953
+balance_band=0-1千 & poutcome=success,2,0.0108,0.6759,5.777,2.724
+campaign_bucket=1次 & poutcome=success,2,0.0123,0.6655,5.688,2.64
+marital=married & poutcome=success,2,0.0121,0.6543,5.593,2.554
+loan=no & poutcome=success,2,0.0207,0.6536,5.587,2.549
+contact=cellular & poutcome=success,2,0.0199,0.6498,5.554,2.522
+poutcome=success,1,0.0216,0.6473,5.532,2.503
+housing=no & job=retired,2,0.0103,0.2617,2.237,1.196
+job=retired & loan=no,2,0.0109,0.2532,2.164,1.182
+job=retired,1,0.0114,0.2279,1.948,1.144
+campaign_bucket=1次 & housing=no,2,0.0366,0.2226,1.903,1.136
+balance_band=1千-5千 & housing=no,2,0.0272,0.2172,1.856,1.128
+housing=no & marital=single,2,0.0273,0.2097,1.793,1.117

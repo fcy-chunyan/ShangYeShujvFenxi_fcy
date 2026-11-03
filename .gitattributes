@@ -1,0 +1,16 @@
+# 统一换行，避免 Windows 检出后 CSV 的 MD5 与论文记录不一致
+* text=auto eol=lf
+
+# 数据文件按二进制处理，禁止任何换行转换（MD5 需与 schema.json / 合规声明一致）
+*.csv -text
+*.tsv -text
+
+# 二进制资源
+*.png binary
+*.jpg binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.sqlite binary
+*.zip binary
+*.js binary
