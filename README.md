@@ -1,24 +1,26 @@
-# 第3章 Python 图表复现
-本目录使用教材附件中的“完整案例”工作簿作为图表数据来源，基于 pandas 重新计算汇总结果，并以 matplotlib 输出 PNG。完整复现收入趋势分析 5 张、财务费用分析 3 张、电商精准营销 4 张，共 12 张图；每张图同时输出对应的 UTF-8-SIG CSV 汇总表。
+# 第5章 Python 图表复现
+
+本脚本读取教材第5章银行案例附件，重建 Power BI 看板中的 6 个视觉对象，并重绘 WPS 贷款归因月报中的 3 张图。输出为 PNG 图表和 UTF-8-SIG CSV 汇总表。
 
 ## 运行
-从工作区根目录运行全部案例：
 
 ```powershell
-.\.venv\Scripts\python.exe .\第三章_python复现\第3章_python复现.py
+.\.venv\Scripts\python.exe .\第五章_python复现.py
 ```
 
-只运行指定案例：
+指定案例运行：
 
 ```powershell
-.\.venv\Scripts\python.exe .\第三章_python复现\第3章_python复现.py --task revenue
-.\.venv\Scripts\python.exe .\第三章_python复现\第3章_python复现.py --task finance
-.\.venv\Scripts\python.exe .\第三章_python复现\第3章_python复现.py --task marketing
+.\.venv\Scripts\python.exe .\第五章_python复现.py --task powerbi
+.\.venv\Scripts\python.exe .\第五章_python复现.py --task attribution
 ```
 
-附件目录不在默认位置时，可通过 `--chapter-dir` 指定；可通过 `--output-dir` 更改结果目录。依赖为 `pandas`、`matplotlib` 和 `openpyxl`。
+附件目录不在默认位置时使用 `--chapter-dir`，输出目录可使用 `--output-dir` 设置。依赖为 `pandas`、`matplotlib`、`openpyxl` 和 `wordcloud`。
 
-## 口径说明
-- 收入分析包含年度销售额、2020年月销售额、2020年月同比、2020年11月省份同比、四川省月同比。为复现完整案例图表，图中的同比率采用其准备区公式 `(本期 - 上期) / 本期`；CSV 同时提供常规定义 `(本期 - 上期) / 上期` 的 `标准同比增长率`，便于核对。上期为零时标准同比率为空值。
-- 财务分析读取完整案例工作簿内的分类费用明细。该工作簿中的财务分类数值与单独提供的原始数据工作簿有差异，因此以完整案例内用于制图的数据为准。
-- 精准营销按客户 ID 去重统计。附件数据中每个客户 ID 唯一，因此与按记录计数的完整案例结果一致；年龄段按 18-25、26-35、36-49、50岁以上划分。
+## 复现边界
+
+- 脚本解析 `.pbix` 的 `Report/Layout`，导出视觉类型、字段绑定和尺寸清单；购买金额、产品类别、风险偏好、期限、原因、目的等指标由学员数据表重新聚合。指标卡的月目标从业务描述中提取。
+- Power BI 分解树是交互式视觉对象，附件没有保存用户展开路径。Python 图以树中绑定的家庭年收入、年龄、学历、性别四个维度分别拆解购买金额，不伪造未保存的交互状态。
+- 自定义词云按 `.pbix` 字段绑定显示原因和购买目的，词频由源数据计数。渲染使用系统微软雅黑/黑体；布局与 Power BI 自定义视觉对象不保证像素级相同。
+- WPS 月报图依据申请明细重算，且脚本会将重算月度/渠道数量与 Word 中嵌入的图表缓存交叉校验。归因瀑布图从 2021 年 4 月到 5 月的总申请量及各渠道变化生成。
+- PBIX 中的 DAX 度量表达式未作为可移植定义导出；目标达成率按业务描述中的月目标计算，展示为累计购买金额除以月目标。
